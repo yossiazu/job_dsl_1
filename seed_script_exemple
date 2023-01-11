@@ -15,5 +15,6 @@ job("$name") {
     xshell{
     ('ls -la')
     ('sh test.c')
+    }
   }
 }
