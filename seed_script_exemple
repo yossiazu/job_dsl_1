@@ -12,6 +12,6 @@ job("$name") {
   }
   steps {
     shell(ls -la) 
-    shell(echo "job dsl work")
+    shell(echo 'job dsl work')
   }
 }
