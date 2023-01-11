@@ -12,6 +12,6 @@ job("$name") {
     scm('* * * * *')
   }
   steps {
-    shell(sh 'echo exemple $name')
+    shell(sh 'ls -la')
   }
 }
