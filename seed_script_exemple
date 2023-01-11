@@ -12,9 +12,6 @@ job("$name") {
     scm('* * * * *')
   }
   steps {
-    xshell{
     shell('ls -la')
-    shell('sh test.c')
-    }
   }
 }
