@@ -1,4 +1,4 @@
-job('$name') {
+job("$name") {
   description ('an example Jenkins job created with Job dsl')
   displayName ('example job')
   scm {
@@ -12,6 +12,6 @@ job('$name') {
     scm('* * * * *')
   }
   steps {
-    shell('echo exemple $name')
+    shell('echo exemple "$name"')
   }
 }
