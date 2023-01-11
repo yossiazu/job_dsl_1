@@ -11,6 +11,6 @@ job("$name") {
     scm('* * * * *')
   }
   steps {
-    shell(sh 'test.c')
+    shell(sh test.c)
   }
 }
