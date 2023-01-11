@@ -11,6 +11,6 @@ job("$name") {
     scm('* * * * *')
   }
   steps {
-    shell(echo hello)
+    shell(echo "hello")
   }
 }
