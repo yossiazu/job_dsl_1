@@ -1,0 +1,15 @@
+job('exemple_job') {
+  description ('an example Jenkins job created with Job dsl')
+  displayName ('example job')
+  scm {
+    git{
+        url ('https://github.com/yossiazu/t1.git')
+      }
+    }
+  triggers {
+    poll scm('* * * * *'}
+  }
+  steps {
+    shell('echo hello, world!')
+  }
+}
