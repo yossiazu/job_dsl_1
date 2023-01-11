@@ -4,6 +4,7 @@ job("$name") {
     git{
          remote{
                  url ('https://github.com/yossiazu/t1.git')
+                 branch ('main')
          }
       }
     }
