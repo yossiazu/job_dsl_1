@@ -9,9 +9,9 @@ job('exemple_job') {
       }
     }
   triggers {
-    poll scm('* * * * *')
+    poll('* * * * *')
   }
   steps {
-    shell('echo hello, world!')
+    shell('echo exemple job')
   }
 }
