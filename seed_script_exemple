@@ -7,7 +7,7 @@ job('exemple_job') {
       }
     }
   triggers {
-    poll scm('* * * * *'}
+    poll scm('* * * * *')
   }
   steps {
     shell('echo hello, world!')
