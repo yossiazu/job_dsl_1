@@ -3,7 +3,9 @@ job('exemple_job') {
   displayName ('example job')
   scm {
     git{
-        url ('https://github.com/yossiazu/t1.git')
+         remote{
+                 url ('https://github.com/yossiazu/t1.git')
+         }
       }
     }
   triggers {
