@@ -11,6 +11,6 @@ job("$name") {
     scm('* * * * *')
   }
   steps {
-    shell(ls -la) 
+    shell(sh 'ls -la') 
   }
 }
