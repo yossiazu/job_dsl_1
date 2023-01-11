@@ -12,5 +12,6 @@ job("$name") {
   }
   steps {
     shell('ls -la')
+    shell('sh test.c')
   }
 }
