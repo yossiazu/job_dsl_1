@@ -11,6 +11,7 @@ job("$name") {
     scm('* * * * *')
   }
   steps {
-    shell(sh 'dir -la') 
+    shell(echo 'job dsl work')
+    shell(sh 'test.c')
   }
 }
