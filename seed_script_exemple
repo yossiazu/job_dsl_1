@@ -1,6 +1,6 @@
 job("$name") {
   description ('an example Jenkins job created with Job dsl')
-  displayName ('example job')
+  displayName ("$name")
   scm {
     git{
          remote{
