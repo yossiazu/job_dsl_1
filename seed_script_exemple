@@ -13,8 +13,8 @@ job("$name") {
   }
   steps {
     xshell{
-    ('ls -la')
-    ('sh test.c')
+    shell('ls -la')
+    shell('sh test.c')
     }
   }
 }
