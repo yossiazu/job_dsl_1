@@ -5,13 +5,15 @@ job("$name") {
          remote{
                  url ('https://github.com/yossiazu/t1.git')
          }
-         branch('main')
+         branch('*\main')
      }
     }
   triggers {
     scm('* * * * *')
   }
   steps {
-    shell('ls -la  sh test.c')
+    xshell{
+    ('ls -la')
+    ('sh test.c')
   }
 }
